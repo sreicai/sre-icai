@@ -76,22 +76,33 @@
 
 .section-home{
     padding:80px 0;
+    
 }
 /* Hero */
 .section-hero{
-    background-image:url(../images/slide1.jpg);
+    background-image:url(../images/baner.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     height:80vh;
+    position:relative;
 }
 
 .hero-items h2{
-    font-size:30px;
-    margin-bottom:50px;
+    font-size:28px;
+    margin-bottom:80px;
     line-height:1.3em;
-    margin-top:100px;
-    color:#0e005c;
+    margin-top:250px;
+    color:#fff;
     font-weight:normal;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.section-hero .overlay{
+    background:rgba(0, 0, 0, 0.64);
+    width:100%;
+    position:absolute;
+    height:100%;
 }
  .btn-link{
     text-align:center;
@@ -164,8 +175,7 @@
     margin-bottom:20px;
 }
 .team-image img{
-    border-radius:50%;
-    width:100px;
+    width:180px;
 }
 .team-member-name{
     margin:10px 0;
@@ -197,7 +207,7 @@
     margin-bottom:20px;
     font-size:24px;
 }
-.main-footer .btn-link{
+.main-footer .btn-link a{
     display: inline-block;
     margin-bottom: 40px;
 }
@@ -207,4 +217,20 @@
 }
 .join-fb-group h2{
     margin-bottom: 60px;
+}
+@media (max-width:768px){
+    .hero-items h2{
+        font-size:16px;
+        margin-top:100px;
+        margin-bottom:50px;
+    }
+    .btn-link a{
+        padding:10px 20px;
+    }
+    .btn-fb-link a{
+        padding:10px 20px;
+    }
+    .main-footer .btn-link a{
+        padding:10px;
+    }
 }
